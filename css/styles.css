@@ -257,6 +257,7 @@ body {
 
 .feature-item {
    
+   
 }
 
 .feature-titel {
@@ -277,9 +278,45 @@ body {
     letter-spacing: 0.02em;
     color: var(--text-color);
     width: 264px;
-    
+    }
 
-}
+        .illustration-content {
+            width: 264px;
+            height: 112px;
+            background-color: rgba(244, 244, 253, 1);
+            border-radius: 4px;
+            display: flex;
+             align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+          
+           
+        }
+    
+        .illustration-list {
+            display: flex;
+                gap: 24px;
+               
+            
+        }
+    
+       
+    
+        .illustration-item {
+            
+            justify-content: center;
+        }
+    
+        .illustration-link {}
+    
+      
+    
+        .illustration-icon {
+            width: 64px;
+            height: 64px;
+            justify-content: center;
+            
+        }
 
 /*section doing*/
 .doing {
