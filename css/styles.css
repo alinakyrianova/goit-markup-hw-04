@@ -95,7 +95,6 @@ body {
 .header {
     background-color: var(--primary-white-color);
     
-
 }
 
 
@@ -152,7 +151,7 @@ body {
    
 }
 
-.list {}
+
 
 
 .header-link:hover,
@@ -204,10 +203,17 @@ body {
 /*hero*/
 .hero {
     background-color: var(--dark-color);
-   
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47,66, 0.7), 
+        rgba(46, 47, 66, 0.7) 
+        ), 
+        url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
 }
 
@@ -314,18 +320,14 @@ body {
     text-transform: capitalize;
     color: var(--dark-color);
     margin-bottom:  72px;
-   
-
-
-}
+   }
 
 .team-list {
     
     display: flex;
     gap: 24px;
     text-align: center;
-    
-}
+    }
 
 .team-item {
     gap: 24px;
@@ -334,15 +336,11 @@ body {
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
         border-radius: 0px 0px 4px 4px;
         width: calc((100%-72px)/4);
-    
-
-}
+    }
 .team-content{
     padding-top: 32px;
     padding-bottom: 32px;
-    
-    
-}
+    }
 
 .team-titel {
     font-weight: 500;
@@ -350,26 +348,54 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-color);
-     
-     
-  
-
-
-
-}
+    margin-bottom: 8px;
+     }
 
 .team-subtitel {
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    margin-bottom: 8px;
 }
+
+.team-social-list {
+   display: flex;
+   gap: 24px;
+   justify-content: center;
+}
+
+
+.team-social-item {
+    width: 40px;
+    height: 40px;
+}
+
+.team-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--primary-brand-color);
+    color:var(--light-color-button);
+}
+.team-social-link:is(:hover, :focus){
+    background-color: var(--pressed-state-color);
+    color: var(--light-color-button);
+}
+ .team-social-icon { 
+    fill: currentcolor;
+}
+
+
 
    /*-------Portfolio--------*/
 
 .header{
     border-bottom: 1px solid #E7E9FC;
-    margin-bottom: 96px;
+    
 }
 
 body{
@@ -420,13 +446,16 @@ body{
 /*sections*/
 .section{} 
 .list {}
-
+.portfolio{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 .portfolio-list {
     
     display: flex;
     gap: 48px 24px;
     flex-wrap: wrap;
-    margin-bottom: 120px;
+    
    
    
    
@@ -439,10 +468,8 @@ body{
 border: 1px solid #E7E9FC;
 border-top: transparent;
 padding: 32px 0 32px 16px;
-    
-   
+    }
 
-}
 .portfolio-item {
   
     width: calc((100% - 48px) /3);
@@ -475,6 +502,7 @@ padding: 32px 0 32px 16px;
         
 }
 /*footer*/
+.container{}
 
 .footer-logo {
 
@@ -488,6 +516,7 @@ padding: 32px 0 32px 16px;
     text-transform: uppercase;
     color: var(--primary-brand-color);
     margin-bottom: 16px;
+   
 }
 
 .footer-logo span {
@@ -499,7 +528,7 @@ padding: 32px 0 32px 16px;
 
 
 
-.link {}
+
 
 .footer-subtitel {
     font-family: 'Roboto';
@@ -509,10 +538,65 @@ padding: 32px 0 32px 16px;
     letter-spacing: 0.02em;
     color:var(--cornflower-color);
     width: 264px;
+    
 }
 
 .footer {
     background-color:var(--dark-color);
     padding: 100px 0;
+    
    
+}
+.footer-social-list {
+   display: flex;
+        gap: 16px;
+        
+        
+}
+
+
+
+.footer-social-item {
+    width: 40px;
+        height: 40px;
+}
+
+.footer-social-link {
+        display: flex;
+       align-items:center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color:rgba(255, 255, 255, 0.1);
+       color: var(--light-color-button);
+}
+
+.footer-social-link:is(:hover, :focus) {
+    background-color: #31D0AA;
+    color: var(--light-color-button);}
+
+.footer-social-icon {
+   fill: currentcolor;
+  }
+.footer-icon {
+   margin-left: 120px;
+}
+ .icon-content {
+   
+   margin-left: 540px;
+
+ }
+.footer-social-media {
+   
+}
+
+.icon-titel {
+    display: flex;
+    gap: 120px;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-white-color);
+    margin-bottom: 16px;
 }
